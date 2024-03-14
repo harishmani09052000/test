@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/a40f34b2cd.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <title>SENSORY EVALPRO</title>
+  <!-- Link to the CSS file -->
+<style>
+
+:root {
+--bg-color: #3a0c5f;
+--text-color: #ffffff;
+--accent-color: #b88bff;
+--font-family: Arial, sans-serif;
+}
+
+/* Apply a global style */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+/* Style the container1 element */
+.container1 {
+display: flex;
+height: 100vh;
+}
+
+/* Style the sidebar element */
+.sidebar {
+width: 30%;
+background-color: #18042c;
+overflow-y: auto;
+}
+
+/* Style the logo element */
+.logo {
+max-width: 70%;
+margin-left: 50px;
+text-align: center;
+padding: 20px;
+}
+
+/* Style the menu element */
+.menu {
+list-style: none;
+color:white;
+}
+
+/* Style the menu items */
+.menu li {
+font-family: var(--font-family);
+font-size: 12px;
+color: white;
+padding: 10px 20px;
+}
+
+/* Style the active menu item */
+.menu li.active {
+/* background-color: var(--accent-color); */
+}
+
+/* Style the submenu element */
+.submenu {
+position: relative;
+
+}
+
+/* Style the submenu icon */
+.submenu::after {
+
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+color: var(--text-color);
+}
+
+/* Style the sublist element */
+.sublist {
+
+list-style: none;
+background-color: #884cfc;
+border-radius: 10%;
+max-width: 250px;
+margin-left: 140px;
+}
+
+/* Style the sublist items */
+.sublist li {
+font-family: var(--font-family);
+font-size: 16px;
+color: var(--text-color);
+padding: 15px 30px;
+}
+
+/* Style the sublist items on hover */
+.sublist li:hover {
+background-color: #48449c;
+border-radius: 30px;
+max-width: 270px;
+cursor: pointer;
+}
+
+.active1{
+
+
+}
+/* Show the sublist when the submenu is hovered */
+.submenu:hover .sublist {
+display: block;
+}
+
+/* Style the signup button */
+.signup {
+font-family: var(--font-family);
+font-size: 18px;
+color: black;
+background-color: white;
+border: none;
+width: 70%;
+margin: 20px auto;
+padding: 10px;
+cursor: pointer;
+border-radius: 30px;
+}
+
+/* Style the content element */
+.content {
+width: 70%;
+
+background: linear-gradient(to bottom right, #18042c 0%, #2c1864 100%);
+padding: 20px;
+overflow-y: auto;
+border-radius: 30px;
+}
+/* .content1{
+width: 80%;
+background-color: white;
+padding: 20px;
+overflow-y: auto;
+
+} */
+
+/* Style the title element */
+.title {
+font-family: var(--font-family);
+font-size: 24px;
+color: var(--text-color);
+margin-bottom: 20px;
+}
+
+/* Style the text element */
+.text {
+font-family: var(--font-family);
+font-size: 21px;
+color: var(--text-color);
+margin-bottom: 20px;
+}
+
+/* Style the arrow button */
+.arrow {
+font-family: var(--font-family);
+font-size: 18px;
+color: var(--text-color);
+background-color: var(--accent-color);
+border: none;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: fixed;
+right: 20px;
+bottom: 20px;
+cursor: pointer;
+}
+
+.topic{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button_startfree{
+        padding: 10px 40px;
+        width: 45%;
+        border: none;
+        cursor: pointer;
+        border-radius: 40px;
+        font-size: 1.4rem;
+        background-color: #b4a4ff;
+        color: black;
+        font-weight: 500;
+
+    }
+
+.content11{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 1630px) {
+
+:root {
+--bg-color: #3a0c5f;
+--text-color: #ffffff;
+--accent-color: #b88bff;
+--font-family: Arial, sans-serif;
+}
+
+/* Apply a global style */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+/* Style the container1 element */
+.container1 {
+display: flex;
+height: 100vh;
+}
+
+/* Style the sidebar element */
+.sidebar {
+width: 30%;
+background-color: #18042c;
+overflow-y: auto;
+}
+
+/* Style the logo element */
+.logo {
+max-width: 70%;
+margin-left: 50px;
+text-align: center;
+padding: 20px;
+}
+
+/* Style the menu element */
+.menu {
+list-style: none;
+color:white;
+}
+
+/* Style the menu items */
+.menu li {
+font-family: var(--font-family);
+font-size: 12px;
+color: white;
+padding: 10px 20px;
+}
+
+/* Style the active menu item */
+.menu li.active {
+/* background-color: var(--accent-color); */
+}
+
+/* Style the submenu element */
+.submenu {
+position: relative;
+}
+
+/* Style the submenu icon */
+.submenu::after {
+
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+color: var(--text-color);
+}
+
+/* Style the sublist element */
+.sublist {
+
+list-style: none;
+background-color: #884cfc;
+border-radius: 10%;
+max-width: 250px;
+margin-left: 100px;
+}
+
+/* Style the sublist items */
+.sublist li {
+font-family: var(--font-family);
+font-size: 16px;
+color: var(--text-color);
+padding: 15px 30px;
+}
+
+/* Style the sublist items on hover */
+.sublist li:hover {
+background-color: #48449c;
+border-radius: 30px;
+max-width: 270px;
+cursor: pointer;
+}
+
+.active1{
+background-color: #48449c;
+border-radius: 30px;
+max-width: 230px;
+margin-left: 10px;
+}
+/* Show the sublist when the submenu is hovered */
+.submenu:hover .sublist {
+display: block;
+}
+
+/* Style the signup button */
+.signup {
+font-family: var(--font-family);
+font-size: 18px;
+color: black;
+background-color: white;
+border: none;
+width: 70%;
+margin: 20px auto;
+padding: 10px;
+cursor: pointer;
+border-radius: 30px;
+}
+
+/* Style the content element */
+.content {
+width: 70%;
+
+background: linear-gradient(to bottom right, #18042c 0%, #2c1864 100%);
+padding: 20px;
+overflow-y: auto;
+border-radius: 30px;
+}
+/* .content1{
+width: 80%;
+background-color: white;
+padding: 20px;
+overflow-y: auto;
+
+} */
+
+/* Style the title element */
+.title {
+font-family: var(--font-family);
+font-size: 24px;
+color: var(--text-color);
+margin-bottom: 20px;
+}
+
+/* Style the text element */
+.text {
+font-family: var(--font-family);
+font-size: 21px;
+color: var(--text-color);
+margin-bottom: 20px;
+}
+
+/* Style the arrow button */
+.arrow {
+font-family: var(--font-family);
+font-size: 18px;
+color: var(--text-color);
+background-color: var(--accent-color);
+border: none;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: fixed;
+right: 20px;
+bottom: 20px;
+cursor: pointer;
+}
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+
+:root {
+--bg-color: #3a0c5f;
+--text-color: #ffffff;
+--accent-color: #b88bff;
+--font-family: Arial, sans-serif;
+}
+
+/* Apply a global style */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+/* Style the container1 element */
+.container1 {
+display: flex;
+height: 100vh;
+}
+
+/* Style the sidebar element */
+.sidebar {
+width: 30%;
+background-color: #18042c;
+overflow-y: auto;
+}
+
+/* Style the logo element */
+.logo {
+max-width: 70%;
+margin-left: 50px;
+text-align: center;
+padding: 20px;
+}
+
+/* Style the menu element */
+.menu {
+list-style: none;
+color:white;
+}
+
+/* Style the menu items */
+.menu li {
+font-family: var(--font-family);
+font-size: 12px;
+color: white;
+padding: 10px 20px;
+}
+
+/* Style the active menu item */
+.menu li.active {
+/* background-color: var(--accent-color); */
+}
+
+/* Style the submenu element */
+.submenu {
+position: relative;
+}
+
+/* Style the submenu icon */
+.submenu::after {
+
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+color: var(--text-color);
+}
+
+/* Style the sublist element */
+.sublist {
+
+list-style: none;
+background-color: #884cfc;
+border-radius: 10%;
+max-width: 250px;
+margin-left: 20px;
+
+}
+
+/* Style the sublist items */
+.sublist li {
+font-family: var(--font-family);
+font-size: 16px;
+color: var(--text-color);
+padding: 15px 30px;
+}
+
+/* Style the sublist items on hover */
+.sublist li:hover {
+background-color: #48449c;
+border-radius: 30px;
+max-width: 270px;
+cursor: pointer;
+}
+
+.active1{
+background-color: #48449c;
+border-radius: 30px;
+max-width: 230px;
+margin-left: 10px;
+}
+/* Show the sublist when the submenu is hovered */
+.submenu:hover .sublist {
+display: block;
+}
+
+/* Style the signup button */
+.signup {
+font-family: var(--font-family);
+font-size: 18px;
+color: black;
+background-color: white;
+border: none;
+width: 70%;
+margin: 20px auto;
+padding: 10px;
+cursor: pointer;
+border-radius: 30px;
+}
+
+/* Style the content element */
+.content {
+width: 70%;
+
+background: linear-gradient(to bottom right, #18042c 0%, #2c1864 100%);
+padding: 20px;
+overflow-y: auto;
+border-radius: 30px;
+}
+/* .content1{
+width: 80%;
+background-color: white;
+padding: 20px;
+overflow-y: auto;
+
+} */
+
+/* Style the title element */
+.title {
+font-family: var(--font-family);
+font-size: 24px;
+color: var(--text-color);
+margin-bottom: 20px;
+}
+
+/* Style the text element */
+.text {
+font-family: var(--font-family);
+font-size: 21px;
+color: var(--text-color);
+margin-bottom: 20px;
+}
+
+/* Style the arrow button */
+.arrow {
+font-family: var(--font-family);
+font-size: 18px;
+color: var(--text-color);
+background-color: var(--accent-color);
+border: none;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: fixed;
+right: 20px;
+bottom: 20px;
+cursor: pointer;
+}
+
+.button_startfree{
+        padding: 10px 40px;
+        width: 45%;
+        border: none;
+        cursor: pointer;
+        border-radius: 40px;
+        font-size: 1rem;
+        background-color: #b4a4ff;
+        color: black;
+        font-weight: 500;
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+  <!-- Link to the JS file -->
+<script>
+// Get the menu element
+const menu = document.querySelector(".menu");
+
+// Get the sublist element
+const sublist = document.querySelector(".sublist");
+
+// Get the arrow button element
+const arrow = document.querySelector(".arrow");
+
+// Add a click event listener to the menu element
+menu.addEventListener("click", function(e) {
+  // Get the target element
+  const target = e.target;
+
+  // Check if the target is a menu item
+  if (target.tagName === "A") {
+    // Remove the active class from the previous menu item
+    menu.querySelector(".active").classList.remove("active");
+
+    // Add the active class to the current menu item
+    target.parentElement.classList.add("active");
+
+    // Check if the target is a submenu item
+    if (target.parentElement.classList.contains("submenu")) {
+      // Toggle the display of the sublist element
+      sublist.style.display = sublist.style.display === "block" ? "none" : "block";
+    } else {
+      // Hide the sublist element
+      sublist.style.display = "none";
+    }
+  }
+});
+
+// Add a click event listener to the arrow button element
+arrow.addEventListener("click", function() {
+  // Navigate to the next page
+  window.location.href = "next.html";
+});
+
+    </script>
+</head>
+<body style="background-color:#301866;">
+  <div class="container1">
+    <div class="sidebar">
+        <img src="logo.png" class="logo">
+      <ul class="menu">
+        <li class="active" style="text-align:center;"><a href="#" style="text-decoration:none;color:white;font-size:1.5rem;">Home</a></li>
+        <br>
+        <li style="text-align:center;align:button;background-color: #48449c;
+border-radius: 30px;"><a href="#" style="text-decoration:none;color:white;font-size:1.5rem;">Choose Your Test</a></li>
+
+        <br>
+    
+        <li style="text-align:center;align:button;"><a href="#" style="text-decoration:none;color:white;font-size:1.5rem;">Results</a></li>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <li style="text-align:center;"><a href="#" style="text-decoration:none;color:white;font-size:1.5rem;">Log in</a></li>
+      </ul>
+      <center>
+      <button class="signup" style="font-size:1.5rem;">Sign up &nbsp; <img src="right-arrows.png" style="position:absolute;max-width:25px;"></button>
+      </center>
+    </div>
+   
+    <div class="content">
+
+
+
+
+    <div class="row g-3">
+  <div class="col-md-6">
+<p class="topic">Choose Your Test</p>
+
+<button class="button_startfree">Triangle test</button><br><br>
+<button class="button_startfree">Duo-Trio Test</button><br><br>
+<button class="button_startfree">Paired Comparison Test</button><br><br>
+<button class="button_startfree">Ranking Test</button><br><br>
+<button class="button_startfree">Preference Test</button><br><br>
+<button class="button_startfree">Hedonic Test</button><br><br>
+
+<a href="" style="color:white;"><i class="fa-solid fa-arrow-right" style="background-color:#b4a4ff; border-radius:70px;padding:20px;float:right;"></i></a>
+   
+  </div>
+  <div class="col-md-6">
+    <br><br><br><br><br>
+  <img src="image3.png" class="rounded float-end" width="100%" height="600px">
+</div>
+  </div>
+
+<p class="content11">Choose one test and press the next button or press enter</p>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+
+<head>
+    <script src="https://kit.fontawesome.com/a40f34b2cd.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    </head>
+    <style>
+    #navbar {
+        background-color: #18042c; /* Dark purple background */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    
+    }
+    
+    .nav-links {
+        list-style: none;
+    }
+    
+    .nav-links li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        padding-left: 20px;
+    }
+    
+    .buttons .login-btn, .buttons .signup-btn {
+        padding: 10px 40px;
+        margin-left: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 1.4rem;
+    }
+    
+    .login-btn {
+        background-color: #18042c;
+        color: white;
+    }
+    
+    .signup-btn {
+        background-color: white;
+        color: black;
+    }
+    
+    .button_startfree{
+        padding: 10px 40px;
+        margin-left: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 1.4rem;
+        background-color: white;
+        color: black;
+        float: right;
+    }
+    .container1{
+        background: linear-gradient(to bottom right, #18042c 0%, #301464 100%);
+        padding-left: 10px;
+        margin-left: 50px;
+        max-width: 100%;
+        margin-right: 50px;
+    }
+    .topic{
+        font-size: 2rem;
+        font-weight: 900;
+        color: white;
+    }
+    .content1{
+        font-size: 1.3rem;
+        line-height: 1.7;
+        color: white;
+    }
+    
+    /* Add responsiveness */
+    
+    @media (max-width: 1024px) {
+        .content1{
+        font-size: 1rem;
+        line-height: 1.7;
+        color: white;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+    
+    .buttons .login-btn, .buttons .signup-btn {
+        padding: 10px 40px;
+        margin-left: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+    
+    }
+    
+    
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none; /* Hide the links on small screens */
+        }
+        .buttons {
+            flex-grow: 1;
+            justify-content: flex-end;
+        }
+    }
+    
+        </style>
+    
+        <script>
+    // JavaScript to handle navigation (optional)
+    document.querySelector('.signup-btn').addEventListener('click', function() {
+        window.location.href = 'signup.html'; // Redirect to the signup page
+    });
+    
+            </script>
+    <body style="background-color:#18042c;">
+    
+    <nav id="navbar">
+        <div class="logo"><img src="logo.png" width="70%"></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#test">Test</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="buttons">
+            <button class="login-btn">Log in</button>
+            <button class="signup-btn">Sign up <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </nav>
+    
+    <br><br><br>
+    <div class="container1">
+    <div class="row g-3">
+    
+    
+    <div class="col-md-6">
+    
+    <p class="topic">Sensory Eval Pro</p>
+    <br>
+    <p class="content1">
+    Sensory Eval Pro is a comprehensive Software that incorporates essential
+    primary sensory evaluation tests. This
+    tool assists in arranging a sensory
+    evaluation tailored to your
+    specifications. It generates a link and
+    code that can be distributed to
+    panelists to take up the sensory
+    evaluation. To uphold test integrity, each
+    panelist receives uniquely coded
+    samples. Panelists start by entering the
+    sample code, sharing their preferences,
+    and noting observations. The software
+    simplifies each test, providing clear
+    explanations for easy comprehension
+    and operation.
+    </p>
+    
+    </div>
+    
+    <div class="col-md-6">
+    <img src="image1.png" class="rounded float-end" width="80%" height="500px">
+    </div>
+    
+    </div>
+    
+    
+    
+    <button class="button_startfree">Start free today <i class="fa-solid fa-arrow-right" style="color: #ffffff; background-color:#18042c; border-radius:20px;padding:10px;"></i></button>
+    <br><br><br>
+    </div>
+    
+    </body>

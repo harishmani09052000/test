@@ -1,0 +1,126 @@
+
+<head>
+
+
+
+    <script src="https://kit.fontawesome.com/a40f34b2cd.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <style>
+    .one{
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: white;
+        margin-left: 100px;
+    }
+    .two{
+        font-size: 1.6rem;
+        color: white;
+        margin-left: 100px;
+    }
+    
+    .button1{
+        padding: 10px 30px;
+            margin-left: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            background-color: #504cec;
+            color: white;
+            margin-left: 100px;
+            width: 50%;
+        
+    }
+    .accountlogin{
+        margin-left: 200px;
+        color: white;
+        font-size: 1.2rem;
+     
+    }
+        </style>
+    </head>
+    
+    
+    <body style="background: linear-gradient(to bottom right, #18042c 50%, #805c7c 100%);">
+    
+    <div class="row g-3">
+        
+        
+        <div class="col-md-6">
+            <br><br>
+            <img src="logo.png" class="rounded mx-auto d-block" width="35%">
+    
+            <p class="one">Login In</p>
+    
+      
+    
+    <div class="form-floating mb-3" style="max-width:50%;margin-left: 100px;">
+      <input type="email" class="form-control" id="floatingemail" placeholder="hello@reallygreatsite.com" style="background-color:#18042c;color:white;">
+      <label for="floatingemail" style="color:white;">Email</label>
+    </div>
+    
+    
+    
+    <style>
+      .password-container {
+        position: relative;
+        width: 200px;
+      }
+      .password {
+        width: 90%;
+        padding: 10px;
+        padding-right: 40px; /* space for the icon */
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .toggle-password {
+        position: absolute;
+        right: 21px;
+        top: 20px;
+        cursor: pointer;
+      }
+    </style>
+    
+    
+    
+    
+    <div class="form-floating mb-3" style="max-width:50%;margin-left: 100px;">
+      <input type="password" class="form-control" id="floatingpassword" placeholder="password" style="background-color:#18042c;color:white;">
+      <label for="floatingpassword" style="color:white;">Password</label>
+    
+      <i id="eye-icon" class="toggle-password"><i class="fa-regular fa-eye" style="color: #fafcff;"></i></i>
+    </div>
+    
+    <script>
+      const togglePassword = document.getElementById('eye-icon');
+      const password = document.getElementById('floatingpassword');
+    
+      togglePassword.addEventListener('click', function () {
+        // Toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+    
+        // Toggle the icon
+        togglePassword.firstElementChild.classList.toggle('fa-eye');
+        togglePassword.firstElementChild.classList.toggle('fa-eye-slash');
+      });
+    </script>
+    
+    
+    
+    <button class="button1">Log In</button>
+    
+    <br>
+    <br>
+    <p class="accountlogin">Don't have an account? <a href="" style="color:white;text-decoration:none;"><u>Sign Up</u></a></p>
+    
+        </div>
+        <div class="col-md-6">
+        <img src="image2.png" class="rounded float-end" width="90%" >
+        </div>
+    
+    </div>
+    </body>
